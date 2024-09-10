@@ -5,9 +5,6 @@
 入手する前・組み立てる前にこのビルドガイドの全てを一読ください。  
 頭の中で実際の作業工程をイメージして読み進めると、実際の作業の際に滞ることが少なくなります。  
 不明点などがありましたら、XやBoothのメッセージ等にてお気軽にご質問ください。  
-また、後述のYoutube動画もご覧になられると、より確実に組み立てることができます。  
-
-## YouTube
 
 ## 組み立てに必要な部品
 
@@ -26,7 +23,7 @@
 ||ケース|1|◯||
 ||M2ネジ 20mm|5|◯||
 ||M2ナット|5|◯||
-||スイッチソケット(MX用)|13|◯|無くてもPCBに直にハンダ付けできますが、**メンテナンス性や組み立てやすさの観点で取り付けを強く推奨します。**||
+||スイッチソケット(MX用)|13|◯|無くてもPCBに直にハンダ付けできますが、**メンテナンス性や組み立てやすさの観点で取り付けを強く推奨します。** 当ビルドガイドではスイッチソケットを使用した組み立て方のみを紹介しております。||
 ||[Pro Micro](https://shop.yushakobo.jp/products/21)|1|◯|キーボードの頭脳部分を司る部品です。ピン数は2列12穴です。どれを買っていいか分からない場合は[コンスルー付きのセット](https://shop.yushakobo.jp/products/21)の購入を推奨します。|
 |<img src = "https://github.com/takashicompany/rookey/raw/master/images/build/IMG_6635.jpg?raw=true" width = "1200px" />|[タクトスイッチ](https://shop.yushakobo.jp/products/a0800ts-01-1)|1|△|キーボードにファームウェアを書き込む際に利用するスイッチです。取り付けなくともピンセットを用いることでファームウェアを書き込めます。詳細は[こちら](https://github.com/takashicompany/rookey/blob/master/README.md#5-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)。|
 |<img src = "https://github.com/takashicompany/rookey/assets/4215759/131d8bc9-4716-4d8d-8934-5a90197babb9" width = "1200px" />|[コンスルー](https://shop.yushakobo.jp/products/31)|2|◯|回路プレートとPro Microを接続する端子です。Pro Microに付属するピンヘッダでの取り付けも可能ですが、作業ミスや故障した際の取り替えが容易になりますので、**コンスルーの使用を強く推奨します。ピンヘッダでの取り付けは当キーボードと当ビルドガイドではサポートしません。** コンスルーの必要な高さはPro Microによって異なりますので、販売元にご確認ください。コンスルーについての詳細な説明は[こちら](https://scrapbox.io/self-made-kbds-ja/%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%AB%E3%83%BC)をご一読ください。併せて[取り付け方の説明](https://yushakobo.zendesk.com/hc/ja/articles/360044233974-%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%AB%E3%83%BC-%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%94%E3%83%B3%E3%83%98%E3%83%83%E3%83%80-%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91%E6%96%B9%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84)も目を通しておくと作業がスムーズに進められます。|
@@ -54,6 +51,331 @@
 |マスキングテープ|キースイッチをハンダ付けする際に役立ちます。|
 
 ## 組み立て方
+
+### 1. PCBの表裏を確認する
+
+表  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9962.jpg?raw=true" width = "600px" />
+
+裏  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9963.jpg?raw=true" width = "600px" />
+
+### 2. スイッチソケットのハンダ付け
+
+キースイッチを取り付けるためのソケットをハンダ付けします。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9964.jpg?raw=true" width = "600px" />
+
+ソケットはPCBの裏面に取り付けます。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9965.jpg?raw=true" width = "600px" />
+
+ソケット取付箇所の片側にハンダを溶かして載せます(予備ハンダ)。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9966.jpg?raw=true" width = "600px" />
+
+ピンセットでソケットを持ちながら予備ハンダを溶かしながらソケットをハンダ付けします。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9967.jpg?raw=true" width = "600px" />
+
+もう片方の取付箇所もハンダ付けします。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9974.jpg?raw=true" width = "600px" />
+
+ISOエンターキーを取り付ける際はPro Micro取付箇所から対角線の位置にはソケットを一つだけつけてください。
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9971.jpg?raw=true" width = "600px" />
+
+ISOエンターキーを取り付けない場合はソケットを2つ取り付けてください。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9969.jpg?raw=true" width = "600px" />
+
+全部で12個か13個のソケットを取り付けます。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9975.jpg?raw=true" width = "600px" />
+
+### 3. Pro Microの取り付け
+
+Pro Microはキーボードの頭脳部分です。キースイッチの入力をPCなどに伝達します。  
+取り付けにはコンスルーを用いることを強く推奨します。  
+コンスルーを用いることでメンテナンス性の向上や組み立て時の失敗を減らすことができます。慣れてない方はぜひご利用ください。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9977.jpg?raw=true" width = "600px" />
+
+コンスルーをPro Microに取り付けます。  
+取り付けの際は[こちら](https://yushakobo.zendesk.com/hc/ja/articles/360044233974-%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%AB%E3%83%BC-%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%94%E3%83%B3%E3%83%98%E3%83%83%E3%83%80-%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91%E6%96%B9%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84)の説明を併読することをオススメします。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9979.jpg?raw=true" width = "600px" />
+
+PCBの裏面にコンスルーを挿します。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9982.jpg?raw=true" width = "600px" />
+
+コンスルーにPCBを挿します。  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9984.jpg?raw=true" width = "600px" />
+
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_.jpg?raw=true" width = "600px" />
+
 
 <!--
 
