@@ -1,4 +1,6 @@
 # Jourkey
+<img src = "https://github.com/user-attachments/assets/75801f0a-18d0-441c-81c1-af17e85d465e" width = "600px" />
+
 
 ## 入手する前に当ビルドガイドをご一読ください。
 
