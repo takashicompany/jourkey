@@ -128,7 +128,7 @@ PCBの表側からリセットスイッチの足が出ていることを確認�
 
 ---
 
-[Remap](https://remap-keys.app/catalog/QSD7jKLB0Ax5J4y8wJ8s/firmware)にてWebブラウザからファームウェアの書き込みを行います。  
+[Remap](https://remap-keys.app/catalog/X0PUV0eSccLSqAIgpZpZ/firmware)にてWebブラウザからファームウェアの書き込みを行います。  
 
 ファームウェアを選んで、Flashをクリックします。  
 <img src = "https://github.com/takashicompany/rookey/assets/4215759/933fc14a-2d65-425c-a00f-eb79a82bd547" width = "600px" />
