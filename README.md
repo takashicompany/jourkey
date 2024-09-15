@@ -10,7 +10,16 @@
 
 ## 組み立てに必要な部品
 
-キットに含まれていないものはご自身でご用意ください。  
+キットに含まれていないものはご自身でご用意ください。
+基本的なセットとしては
+
+- Jourkey PCB
+- M2ネジ 20mm
+- M2ナット
+- タクトスイッチ
+- ウレタンクッション
+
+を同梱しているかと思いますので、それ以外の部品はご自身でご用意いただくことになります。
 
 以下は必須の項目の説明です。
 |記号|説明|
@@ -22,10 +31,10 @@
 |画像|部品名|個数|必須|備考|
 |:--|:--|:--|:--|:--|
 |<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9962.jpg?raw=true" width = "600px" />|Jourkey PCB|1|◯||
-|<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_0003.jpg?raw=true" width = "600px" />|アクリル積層ケース|1|◯|[遊舎工房のキーボードアクリルプレート](https://shop.yushakobo.jp/products/keyboard_acrylic_plate?variant=50255939272935)より発注が可能です。カットのデータ[こちら](https://github.com/takashicompany/jourkey/blob/master/case/joukey_laser_a4_yushakobo.ai)です。|
+|<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_0003.jpg?raw=true" width = "600px" />|[アクリル積層ケース](https://shop.yushakobo.jp/products/keyboard_acrylic_plate?variant=50255939272935)|1|◯|[遊舎工房のキーボードアクリルプレート](https://shop.yushakobo.jp/products/keyboard_acrylic_plate?variant=50255939272935)より発注が可能です。カットのデータ[こちら](https://github.com/takashicompany/jourkey/blob/master/case/joukey_laser_a4_yushakobo.ai)です。|
 |<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_0016.jpg?raw=true" width = "600px" />|M2ネジ 20mm|5|◯||
 |<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_0016.jpg?raw=true" width = "600px" />|M2ナット|5|◯||
-|<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9964.jpg?raw=true" width = "600px" />|スイッチソケット(MX用)|13|◯|無くてもPCBに直にハンダ付けできますが、**メンテナンス性や組み立てやすさの観点で取り付けを強く推奨します。** 当ビルドガイドではスイッチソケットを使用した組み立て方のみを紹介しております。||
+|<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9964.jpg?raw=true" width = "600px" />|[スイッチソケット(MX用)](https://shop.yushakobo.jp/products/a01ps?_pos=22&_sid=8dd408504&_ss=r)|13|◯|無くてもPCBに直にハンダ付けできますが、**メンテナンス性や組み立てやすさの観点で取り付けを強く推奨します。** 当ビルドガイドではスイッチソケットを使用した組み立て方のみを紹介しております。||
 |<img src = "https://github.com/takashicompany/jourkey/blob/master/images/build/IMG_9977.jpg?raw=true" width = "600px" />|[Pro Micro](https://shop.yushakobo.jp/products/21)|1|◯|キーボードの頭脳部分を司る部品です。ピン数は2列12穴です。どれを買っていいか分からない場合は[コンスルー付きのセット](https://shop.yushakobo.jp/products/21)の購入を推奨します。|
 |<img src = "https://github.com/takashicompany/rookey/raw/master/images/build/IMG_6635.jpg?raw=true" width = "1200px" />|[タクトスイッチ](https://shop.yushakobo.jp/products/a0800ts-01-1)|1|△|キーボードにファームウェアを書き込む際に利用するスイッチです。取り付けなくともピンセットを用いることでファームウェアを書き込めます。詳細は[こちら](https://github.com/takashicompany/rookey/blob/master/README.md#5-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)。|
 |<img src = "https://github.com/takashicompany/rookey/assets/4215759/131d8bc9-4716-4d8d-8934-5a90197babb9" width = "1200px" />|[コンスルー](https://shop.yushakobo.jp/products/31)|2|◯|回路プレートとPro Microを接続する端子です。Pro Microに付属するピンヘッダでの取り付けも可能ですが、作業ミスや故障した際の取り替えが容易になりますので、**コンスルーの使用を強く推奨します。ピンヘッダでの取り付けは当キーボードと当ビルドガイドではサポートしません。** コンスルーの必要な高さはPro Microによって異なりますので、販売元にご確認ください。コンスルーについての詳細な説明は[こちら](https://scrapbox.io/self-made-kbds-ja/%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%AB%E3%83%BC)をご一読ください。併せて[取り付け方の説明](https://yushakobo.zendesk.com/hc/ja/articles/360044233974-%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%AB%E3%83%BC-%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%94%E3%83%B3%E3%83%98%E3%83%83%E3%83%80-%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91%E6%96%B9%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84)も目を通しておくと作業がスムーズに進められます。|
