@@ -1,6 +1,9 @@
 # Jourkey
-<img src = "https://github.com/user-attachments/assets/75801f0a-18d0-441c-81c1-af17e85d465e" width = "600px" />
 
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/03.jpg?raw=true" width = "600px" />  
+<img src = "https://github.com/takashicompany/jourkey/blob/master/images/06-c.jpg?raw=true" width = "600px" />
+
+3Dプリントケースについては[こちら](https://github.com/takashicompany/jourkey/blob/master/3dp-case.md)に記載があります。
 
 ## 入手する前に当ビルドガイドをご一読ください。
 
