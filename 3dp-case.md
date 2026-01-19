@@ -1,4 +1,4 @@
-# Jourkey 3DPプリントケース
+# Jourkey 3Dプリントケース
 
 <img src = "https://github.com/takashicompany/jourkey/blob/master/images/06.jpg?raw=true" width = "600px" />
 
@@ -26,4 +26,5 @@ BambuStudio用の[.3mfファイル](https://github.com/takashicompany/jourkey/ra
 [写真をとる際にJourkeyを立てかけられるスタンドのデータ](https://github.com/takashicompany/jourkey/blob/master/case/3d-print/stl/jourkey-stand.stl)も用意しました。
 
 BambuStudio用の[.3mfファイル](https://github.com/takashicompany/jourkey/raw/refs/heads/master/case/3d-print/3mf/jourkey-3dp-stand.3mf)はこちらです。
+
 
